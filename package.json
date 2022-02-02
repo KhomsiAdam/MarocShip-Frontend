@@ -1,0 +1,43 @@
+{
+  "name": "cva",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/**",
+    "lint:fix": "yarn lint -- --fix",
+    "build:css": "npx tailwindcss -i src/index.css -o src/App.css",
+    "watch:css": "npx tailwindcss -i src/index.css -o src/App.css --watch"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.25.0",
+    "daisyui": "^1.25.4",
+    "formik": "^2.2.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-query": "^3.34.12",
+    "react-router-dom": "6",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.16",
+    "vite": "^2.7.2",
+    "vite-plugin-svgr": "^1.0.1",
+    "vite-preset-react": "^2.2.0"
+  }
+}
