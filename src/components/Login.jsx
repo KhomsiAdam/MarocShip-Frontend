@@ -89,7 +89,7 @@ function Login() {
           </div>
           <div className="form-control">
             <label className="label" htmlFor="password">
-              <span className="label-text">Username</span>
+              <span className="label-text">Password</span>
             </label>
             <Field name="password">
               {({ field, meta: { touched, error } }) => (

@@ -1,4 +1,5 @@
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
+import Deliveries from './Deliveries';
 import Drivers from './Drivers';
 import Header from './Header';
 import Managers from './Managers';
@@ -21,6 +22,32 @@ function Dashboard({ userRole }) {
           <Routes>
             <Route path="supervisors" element={<Supervisors />} />
             <Route path="drivers" element={<Drivers />} />
+          </Routes>
+        );
+      case 'Supervisor':
+        return (
+          <Routes>
+            <Route
+              path="deliveries"
+              element={<Deliveries endpoint="/supervisor/deliveries" />}
+            />
+          </Routes>
+        );
+      case 'Driver':
+        return (
+          <Routes>
+            <Route
+              path="deliveries"
+              element={<Deliveries endpoint="/driver/deliveries" />}
+            />
+            <Route
+              path="claimed"
+              element={<Deliveries endpoint="/driver/claimed" />}
+            />
+            <Route
+              path="delivered"
+              element={<Deliveries endpoint="/driver/delivered" />}
+            />
           </Routes>
         );
       default:
